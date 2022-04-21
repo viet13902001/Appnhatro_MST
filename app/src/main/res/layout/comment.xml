@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activity.Comment"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarcomment"
+        android:background="#008EFF"
+        app:titleTextColor="#FFFFFF"
+        app:title="Comment"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Rating"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:id="@+id/rateCount"/>
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write Review. . ."
+        android:id="@+id/editText"
+        android:textAppearance="?android:textAppearanceMedium"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:id="@+id/button"
+        android:layout_gravity="right"/>
+
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/editText"-->
+    <!--        android:layout_width="407dp"-->
+    <!--        android:layout_height="54dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:inputType="textPersonName"-->
+    <!--        android:text=""-->
+    <!--        tools:layout_editor_absoluteX="1dp"-->
+    <!--        tools:layout_editor_absoluteY="16dp" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/editText"-->
+    <!--        android:text="Thêm"-->
+    <!--        tools:layout_editor_absoluteX="16dp"-->
+    <!--        tools:layout_editor_absoluteY="89dp"-->
+    <!--        />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button2"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/editText"-->
+    <!--        android:layout_marginLeft="12dp"-->
+    <!--        android:layout_marginTop="1dp"-->
+    <!--        android:layout_toRightOf="@+id/button"-->
+    <!--        android:text="Cập nhật"-->
+    <!--        tools:layout_editor_absoluteX="161dp"-->
+    <!--        tools:layout_editor_absoluteY="89dp" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/editText"-->
+<!--            android:layout_marginLeft="22dp"-->
+<!--            android:layout_marginTop="1dp"-->
+<!--            android:layout_toRightOf="@+id/button2"-->
+<!--            android:text="Xóa"-->
+<!--            tools:layout_editor_absoluteX="307dp"-->
+<!--            tools:layout_editor_absoluteY="89dp" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button4"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@+id/editText"-->
+    <!--        android:layout_marginLeft="22dp"-->
+    <!--        android:layout_toRightOf="@+id/button3"-->
+    <!--        android:text="Thoat"/>-->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/button"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="188dp" />
+
+
+</LinearLayout>
